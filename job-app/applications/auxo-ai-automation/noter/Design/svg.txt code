@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <style>
+      .f   { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .lbl { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; fill: #1a1a1a; font-weight: 600; }
+      .sub { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; fill: #aaa; }
+      .tag { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 9px;  fill: #bbb; letter-spacing: 2px; }
+    </style>
+    <marker id="ma" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,1.5 L4.5,3 L0,4.5" fill="none" stroke="#ccc" stroke-width="1"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="600" fill="#fff"/>
+
+  <!--
+    GRID PLAN
+    ─────────────────────────────────────────────
+    Canvas:         900 × 600
+    Auxo logo:      centre x=450, y=58
+
+    Laptop:         left=270  right=630  (width=360)
+                    top=168   bottom=388
+
+    Left icons:     centre x=110   (gap to laptop: 270-110=160px)
+    Right icons:    centre x=790   (gap to laptop: 790-630=160px)
+
+    Icon rows (vertical centres):  218 / 308 / 398
+    Icon size:  52×52 px  → translate(cx-26, ry-26)
+
+    Text gap below icon bottom:  +14px for label, +14px for sub
+    ─────────────────────────────────────────────
+  -->
+
+  <!-- ══ LOGO ══ -->
+  <circle cx="450" cy="58" r="46" fill="none" stroke="#1a1a1a" stroke-width="2.2"/>
+  <rect x="469" y="87" width="29" height="13" fill="white"/>
+  <text x="428" y="66" class="f" font-size="21" fill="#1a1a1a" font-weight="300" letter-spacing="1">auxo</text>
+  <text x="450" y="124" text-anchor="middle" class="tag">FULDENDER DIN DIGITALE VÆKST</text>
+
+  <!-- Fan lines left (blue) -->
+  <path d="M418,103 C372,148 298,188 236,222" fill="none" stroke="#2B9BD6" stroke-width="1.4" stroke-linecap="round" opacity="0.28"/>
+  <path d="M408,107 C354,160 272,204 200,302" fill="none" stroke="#2B9BD6" stroke-width="1.0" stroke-linecap="round" opacity="0.14"/>
+  <path d="M401,111 C340,170 254,220 174,392" fill="none" stroke="#2B9BD6" stroke-width="0.8" stroke-linecap="round" opacity="0.09"/>
+
+  <!-- Fan lines right (green) -->
+  <path d="M482,103 C528,148 602,188 664,222" fill="none" stroke="#3DB87A" stroke-width="1.4" stroke-linecap="round" opacity="0.28"/>
+  <path d="M492,107 C546,160 628,204 700,302" fill="none" stroke="#3DB87A" stroke-width="1.0" stroke-linecap="round" opacity="0.14"/>
+  <path d="M499,111 C560,170 646,220 726,392" fill="none" stroke="#3DB87A" stroke-width="0.8" stroke-linecap="round" opacity="0.09"/>
+
+  <!-- ══ LAPTOP ══ -->
+  <!-- Screen housing: left=270  right=630  top=168  bottom=386 -->
+  <rect x="270" y="168" width="360" height="218" rx="12" fill="#f7f7f5" stroke="#1a1a1a" stroke-width="2.2"/>
+  <rect x="284" y="182" width="332" height="190" rx="5" fill="#fff" stroke="#e8e8e6" stroke-width="1"/>
+  <circle cx="450" cy="175" r="3.5" fill="#e0e0e0"/>
+  <!-- Base: extends 20px each side -->
+  <rect x="250" y="386" width="400" height="22" rx="5" fill="#eae9e5" stroke="#1a1a1a" stroke-width="1.8"/>
+  <rect x="374" y="392" width="88" height="11" rx="5" fill="#d8d7d3" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Screen content -->
+  <!-- Row 1: webhook → n8n → AI -->
+  <rect x="296" y="200" width="66" height="28" rx="5" fill="#2B9BD6"/>
+  <text x="329" y="218" text-anchor="middle" class="f" font-size="9" fill="white" font-weight="600">webhook</text>
+
+  <line x1="362" y1="214" x2="382" y2="214" stroke="#ccc" stroke-width="1.3" marker-end="url(#ma)"/>
+
+  <rect x="384" y="200" width="54" height="28" rx="5" fill="#1a1a1a"/>
+  <text x="411" y="218" text-anchor="middle" class="f" font-size="9" fill="white" font-weight="600">n8n</text>
+
+  <line x1="438" y1="214" x2="458" y2="214" stroke="#ccc" stroke-width="1.3" marker-end="url(#ma)"/>
+
+  <rect x="460" y="200" width="54" height="28" rx="5" fill="none" stroke="#3DB87A" stroke-width="1.7"/>
+  <text x="487" y="218" text-anchor="middle" class="f" font-size="9" fill="#3DB87A" font-weight="600">AI</text>
+
+  <!-- Drop lines -->
+  <line x1="411" y1="228" x2="411" y2="246" stroke="#e8e8e6" stroke-width="1.1"/>
+  <line x1="323" y1="246" x2="534" y2="246" stroke="#e8e8e6" stroke-width="1.1"/>
+
+  <!-- Row 2: e-mail / CRM / SoMe -->
+  <line x1="329" y1="246" x2="329" y2="258" stroke="#e8e8e6" stroke-width="1.1"/>
+  <rect x="296" y="258" width="66" height="24" rx="4" fill="#EDF6FD" stroke="#2B9BD6" stroke-width="1.3"/>
+  <text x="329" y="274" text-anchor="middle" class="f" font-size="9" fill="#2B9BD6">e-mail</text>
+
+  <line x1="411" y1="246" x2="411" y2="258" stroke="#e8e8e6" stroke-width="1.1"/>
+  <rect x="384" y="258" width="54" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
+  <text x="411" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A">CRM</text>
+
+  <line x1="519" y1="246" x2="519" y2="258" stroke="#e8e8e6" stroke-width="1.1"/>
+  <rect x="487" y="258" width="64" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
+  <text x="519" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A">SoMe</text>
+
+  <!-- (bar chart removed) -->
+
+  <!-- ══════════════════════════════════════════════
+       LEFT ICONS  —  centre x=110
+       Row centres: y=218, 308, 398
+       Icon 52×52, so translate(84, y-26)
+       Label at y+40, sub at y+54
+  ══════════════════════════════════════════════ -->
+
+  <!-- Globe / Hjemmeside  (row y=218) -->
+  <g transform="translate(84,192)">
+    <circle cx="26" cy="26" r="24" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
+    <line x1="2" y1="26" x2="50" y2="26" stroke="#1a1a1a" stroke-width="1.4"/>
+    <ellipse cx="26" cy="26" rx="11" ry="24" fill="none" stroke="#1a1a1a" stroke-width="1.4"/>
+    <path d="M6,17 Q26,22 46,17" fill="none" stroke="#ddd" stroke-width="1"/>
+    <path d="M6,35 Q26,30 46,35" fill="none" stroke="#ddd" stroke-width="1"/>
+    <circle cx="26" cy="26" r="4.5" fill="#2B9BD6"/>
+  </g>
+  <text x="110" y="258" text-anchor="middle" class="lbl">Hjemmeside</text>
+  <text x="110" y="272" text-anchor="middle" class="sub">Drupal · WordPress</text>
+
+  <!-- Magnifier / SEO  (row y=308) -->
+  <g transform="translate(84,282)">
+    <circle cx="22" cy="22" r="20" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
+    <line x1="37" y1="37" x2="52" y2="52" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="30" x2="22" y2="12" stroke="#2B9BD6" stroke-width="2" stroke-linecap="round"/>
+    <polyline points="16,19 22,11 28,19" fill="none" stroke="#2B9BD6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <text x="110" y="348" text-anchor="middle" class="lbl">SEO</text>
+  <text x="110" y="362" text-anchor="middle" class="sub">Google · Organisk</text>
+
+  <!-- Bag / Webshop  (row y=398) -->
+  <g transform="translate(84,372)">
+    <rect x="4" y="16" width="44" height="32" rx="4" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
+    <path d="M14,16 C14,6 38,6 38,16" fill="none" stroke="#1a1a1a" stroke-width="1.9" stroke-linecap="round"/>
+    <circle cx="26" cy="32" r="5" fill="#3DB87A" opacity="0.85"/>
+    <path d="M22,32 l3,3 l5-6" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="110" y="438" text-anchor="middle" class="lbl">Webshop</text>
+  <text x="110" y="452" text-anchor="middle" class="sub">WooCommerce</text>
+
+  <!-- ══════════════════════════════════════════════
+       RIGHT ICONS  —  centre x=790
+       Row centres: y=218, 308, 398
+       Icon 52×52, so translate(764, y-26)
+       Label at y+40, sub at y+54
+  ══════════════════════════════════════════════ -->
+
+  <!-- Target / Google Ads  (row y=218) -->
+  <g transform="translate(764,192)">
+    <circle cx="26" cy="26" r="24" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
+    <circle cx="26" cy="26" r="13" fill="none" stroke="#1a1a1a" stroke-width="1.4"/>
+    <circle cx="26" cy="26" r="4.5" fill="#2B9BD6"/>
+    <line x1="26" y1="2"  x2="26" y2="11" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="26" y1="41" x2="26" y2="50" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="2"  y1="26" x2="11" y2="26" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="41" y1="26" x2="50" y2="26" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <text x="790" y="258" text-anchor="middle" class="lbl">Google Ads</text>
+  <text x="790" y="272" text-anchor="middle" class="sub">Synlighed · Konvertering</text>
+
+  <!-- Megaphone / SoMe  (row y=308) -->
+  <g transform="translate(764,282)">
+    <path d="M8,17 L8,29 L23,34 L23,12 Z" fill="none" stroke="#1a1a1a" stroke-width="1.9" stroke-linejoin="round"/>
+    <path d="M23,12 L46,4 L46,42 L23,34 Z" fill="none" stroke="#1a1a1a" stroke-width="1.9" stroke-linejoin="round"/>
+    <path d="M50,15 Q57,23 50,31" fill="none" stroke="#3DB87A" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M54,11 Q63,23 54,35" fill="none" stroke="#3DB87A" stroke-width="1.3" stroke-linecap="round" opacity="0.45"/>
+    <line x1="8" y1="29" x2="8" y2="42" stroke="#1a1a1a" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+  <text x="790" y="348" text-anchor="middle" class="lbl">SoMe</text>
+  <text x="790" y="362" text-anchor="middle" class="sub">Facebook · Instagram</text>
+
+  <!-- Envelope + shield / Office 365  (row y=398) -->
+  <g transform="translate(764,372)">
+    <rect x="2" y="8" width="48" height="34" rx="5" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
+    <path d="M2,13 L26,27 L50,13" fill="none" stroke="#1a1a1a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40,0 C40,0 52,-2 52,8 C52,16 46,20 40,21 C34,20 28,16 28,8 C28,-2 40,0 40,0Z" fill="#2B9BD6"/>
+    <path d="M36,9 l3,3 l6-6" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="790" y="438" text-anchor="middle" class="lbl">Office 365</text>
+  <text x="790" y="452" text-anchor="middle" class="sub">Mail · Backup · Support</text>
+
+  <!-- ══ CONNECTORS  ══
+       Left icons right edge ≈ 136   Laptop left edge = 270   Gap = 134px
+       Right icons left edge ≈ 764   Laptop right edge = 630  Gap = 134px
+  -->
+  <line x1="136" y1="218" x2="268" y2="252" stroke="#2B9BD6" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
+  <line x1="136" y1="308" x2="268" y2="295" stroke="#2B9BD6" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
+  <line x1="136" y1="398" x2="268" y2="362" stroke="#2B9BD6" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
+
+  <line x1="764" y1="218" x2="632" y2="252" stroke="#3DB87A" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
+  <line x1="764" y1="308" x2="632" y2="295" stroke="#3DB87A" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
+  <line x1="764" y1="398" x2="632" y2="362" stroke="#3DB87A" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
+
+  <!-- ══ BOTTOM ══ -->
+  <line x1="60" y1="508" x2="840" y2="508" stroke="#f0f0ee" stroke-width="1"/>
+
+  <rect x="60" y="520" width="4" height="28" rx="2" fill="#2B9BD6"/>
+  <text x="74" y="531" class="f" font-size="9.5" fill="#2B9BD6" letter-spacing="2" font-weight="600">AUTOMATION</text>
+  <text x="74" y="547" class="f" font-size="11.5" fill="#1a1a1a" font-weight="300">Workflows der kører selv. Systemer der skalerer.</text>
+
+  <rect x="460" y="520" width="4" height="28" rx="2" fill="#3DB87A"/>
+  <text x="474" y="531" class="f" font-size="9.5" fill="#3DB87A" letter-spacing="2" font-weight="600">VÆKST</text>
+  <text x="474" y="547" class="f" font-size="11.5" fill="#1a1a1a" font-weight="300">Auxos 360° digitale løsninger — automatiseret.</text>
+
+  <line x1="60" y1="568" x2="840" y2="568" stroke="#f0f0ee" stroke-width="1"/>
+  <text x="450" y="586" text-anchor="middle" class="tag">AI &amp; AUTOMATIONS SPECIALIST · AUXO · ESBJERG</text>
+
+</svg>

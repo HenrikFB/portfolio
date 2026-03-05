@@ -23,8 +23,14 @@ export interface CompanyConfig {
   coverLetter: {
     greeting: string;
     opening: string;
-    body: string;
+    body?: string;
+    quoteSnippets?: string[];
+    sections?: {
+      title: string;
+      items: string[];
+    }[];
     projectProposals?: string;
     closing: string;
+    illustration?: string;
   };
 }
