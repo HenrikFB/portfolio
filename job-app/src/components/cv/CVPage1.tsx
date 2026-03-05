@@ -52,25 +52,6 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
           </ul>
         </SidebarSection>
 
-        {/* Key Skills */}
-        <SidebarSection title="Key Skills">
-          <div className="flex flex-wrap gap-[4px]">
-            {template.highlightSkills
-              .flatMap((cat) => {
-                const items = (profile.skills as Record<string, string[]>)[cat];
-                return items ? items.slice(0, 5) : [];
-              })
-              .map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-white/25 px-[7px] py-[2px] text-[0.56rem] text-white/70"
-                >
-                  {skill}
-                </span>
-              ))}
-          </div>
-        </SidebarSection>
-
         {/* Contact — pushed to bottom */}
         <div className="mt-auto">
           <SidebarSection title="Contact Information">
