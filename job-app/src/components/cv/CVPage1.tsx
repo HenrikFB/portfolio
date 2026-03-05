@@ -143,6 +143,13 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
             <br />
             <span className="text-[0.66rem]">C# | SQL | Javascript | .Net Core | Fullstack .net</span>
           </li>
+          <li>
+            <a href="https://bonuscyberknowhow.dk/" target="_blank" rel="noopener" className="font-medium underline" style={{ color: "var(--accent)" }}>
+              BonusCyberKnowHow (6 weeks)
+            </a>
+            <br />
+            <span className="text-[0.66rem]">Cybersecurity, risk management, NIS2, D-mærket, Dansk Standard, beredskabskommunikation, Microsoft SC-900, cyber awareness, technical hands-on training</span>
+          </li>
         </ul>
 
         {/* Personal Project */}

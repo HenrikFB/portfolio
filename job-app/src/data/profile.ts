@@ -56,7 +56,8 @@ export const profile = {
   collaborations: [
     "2024-11 to 1 jan: Payment & Dashboard for Keypitt in Next.js",
     "2 weeks M365/office add-in (React)",
-    "6 week course + 4 week internship at an SME",
+    "6 weeks compliance course + 4 week internship at an SME",
+    "4 weeks with Digi-tal.dk: Creditor/debtor/bank reconciliation software — document parsing, automated data retrieval from skat.dk",
     "1. july 2025: 2 weeks with NyKapital: Menu cards (PDF) => JSON for POS (AI Engineering)",
     "9-10 weeks at AMU JUUL: Chatbot + dynamic UI, AI Engineering, RAG, vector db, and web",
   ],
