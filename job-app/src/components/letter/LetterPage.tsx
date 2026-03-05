@@ -85,7 +85,7 @@ export function LetterPage({
 
       {/* Illustration — right after closing (inline SVG for reliable render/print) */}
       {(illustrationSvg || coverLetter.illustration) && (
-        <div className="mt-6 w-full max-w-[180mm]" style={{ maxWidth: "180mm" }}>
+        <div className="mt-6 w-full max-w-[140mm]" style={{ maxWidth: "140mm" }}>
           {illustrationSvg ? (
             <div
               className="[&_svg]:w-full [&_svg]:h-auto [&_svg]:block"
@@ -96,7 +96,7 @@ export function LetterPage({
               src={coverLetter.illustration!}
               alt=""
               className="w-full h-auto block"
-              style={{ maxWidth: "180mm" }}
+              style={{ maxWidth: "140mm" }}
             />
           )}
         </div>

@@ -1,17 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460">
   <defs>
     <style>
-      .f   { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-      .lbl { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; fill: #1a1a1a; font-weight: 600; }
-      .sub { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; fill: #aaa; }
-      .tag { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 9px;  fill: #bbb; letter-spacing: 2px; }
+      .f   { font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
+      .lbl { font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 12px; fill: #1a1a1a; font-weight: 600; }
+      .sub { font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10px; fill: #aaa; }
+      .tag { font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 9px; fill: #bbb; letter-spacing: 2px; }
     </style>
     <marker id="ma" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
       <path d="M0,1.5 L4.5,3 L0,4.5" fill="none" stroke="#ccc" stroke-width="1"/>
     </marker>
   </defs>
 
-  <rect width="900" height="600" fill="#fff"/>
+  <rect width="900" height="460" fill="#fff"/>
 
   <!-- LOGO -->
   <circle cx="450" cy="58" r="46" fill="none" stroke="#1a1a1a" stroke-width="2.2"/>
@@ -63,7 +64,7 @@
     <circle cx="26" cy="26" r="4.5" fill="#2B9BD6"/>
   </g>
   <text x="110" y="258" text-anchor="middle" class="lbl">Hjemmeside</text>
-  <text x="110" y="272" text-anchor="middle" class="sub">Drupal · WordPress</text>
+  <text x="110" y="272" text-anchor="middle" class="sub">Drupal - WordPress</text>
 
   <g transform="translate(84,282)">
     <circle cx="22" cy="22" r="20" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
@@ -72,7 +73,7 @@
     <polyline points="16,19 22,11 28,19" fill="none" stroke="#2B9BD6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
   </g>
   <text x="110" y="348" text-anchor="middle" class="lbl">SEO</text>
-  <text x="110" y="362" text-anchor="middle" class="sub">Google · Organisk</text>
+  <text x="110" y="362" text-anchor="middle" class="sub">Google - Organisk</text>
 
   <g transform="translate(84,372)">
     <rect x="4" y="16" width="44" height="32" rx="4" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
@@ -93,7 +94,7 @@
     <line x1="41" y1="26" x2="50" y2="26" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round"/>
   </g>
   <text x="790" y="258" text-anchor="middle" class="lbl">Google Ads</text>
-  <text x="790" y="272" text-anchor="middle" class="sub">Synlighed · Konvertering</text>
+  <text x="790" y="272" text-anchor="middle" class="sub">Synlighed - Konvertering</text>
 
   <g transform="translate(764,282)">
     <path d="M8,17 L8,29 L23,34 L23,12 Z" fill="none" stroke="#1a1a1a" stroke-width="1.9" stroke-linejoin="round"/>
@@ -103,7 +104,7 @@
     <line x1="8" y1="29" x2="8" y2="42" stroke="#1a1a1a" stroke-width="1.7" stroke-linecap="round"/>
   </g>
   <text x="790" y="348" text-anchor="middle" class="lbl">SoMe</text>
-  <text x="790" y="362" text-anchor="middle" class="sub">Facebook · Instagram</text>
+  <text x="790" y="362" text-anchor="middle" class="sub">Facebook - Instagram</text>
 
   <g transform="translate(764,372)">
     <rect x="2" y="8" width="48" height="34" rx="5" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
@@ -112,7 +113,7 @@
     <path d="M36,9 l3,3 l6-6" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <text x="790" y="438" text-anchor="middle" class="lbl">Office 365</text>
-  <text x="790" y="452" text-anchor="middle" class="sub">Mail · Backup · Support</text>
+  <text x="790" y="452" text-anchor="middle" class="sub">Mail - Backup - Support</text>
 
   <line x1="136" y1="218" x2="268" y2="252" stroke="#2B9BD6" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
   <line x1="136" y1="308" x2="268" y2="295" stroke="#2B9BD6" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
@@ -120,14 +121,4 @@
   <line x1="764" y1="218" x2="632" y2="252" stroke="#3DB87A" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
   <line x1="764" y1="308" x2="632" y2="295" stroke="#3DB87A" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
   <line x1="764" y1="398" x2="632" y2="362" stroke="#3DB87A" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
-
-  <line x1="60" y1="508" x2="840" y2="508" stroke="#f0f0ee" stroke-width="1"/>
-  <rect x="60" y="520" width="4" height="28" rx="2" fill="#2B9BD6"/>
-  <text x="74" y="531" class="f" font-size="9.5" fill="#2B9BD6" letter-spacing="2" font-weight="600">AUTOMATION</text>
-  <text x="74" y="547" class="f" font-size="11.5" fill="#1a1a1a" font-weight="300">Workflows der kører selv. Systemer der skalerer.</text>
-  <rect x="460" y="520" width="4" height="28" rx="2" fill="#3DB87A"/>
-  <text x="474" y="531" class="f" font-size="9.5" fill="#3DB87A" letter-spacing="2" font-weight="600">VÆKST</text>
-  <text x="474" y="547" class="f" font-size="11.5" fill="#1a1a1a" font-weight="300">Auxos 360° digitale løsninger  automatiseret.</text>
-  <line x1="60" y1="568" x2="840" y2="568" stroke="#f0f0ee" stroke-width="1"/>
-  <text x="450" y="586" text-anchor="middle" class="tag">AI &amp; AUTOMATIONS SPECIALIST · AUXO · ESBJERG</text>
 </svg>
