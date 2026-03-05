@@ -4,20 +4,25 @@ Brug dette når du har et udkast og vil finpudse det.
 
 ---
 
+## Ansøgningsformat
+
+Brevet bruger **sections** (3 lister med titel + items), **quoteSnippets** (badges), **greeting**, **opening**, **closing**, og evt. **illustration**. Se `applications/auxo-ai-automation/config.ts` som reference.
+
 ## Instruktion
 
 Jeg har et udkast til en motiveret ansøgning. Hjælp mig med at:
 
 1. **Tjek tone** — er den direkte nok? Undgå corporate-speak. Skriv som om jeg snakker med dem.
-2. **Tjek pilotprojekter** — er de konkrete nok? Vil modtageren forstå hvad jeg faktisk vil bygge?
-3. **Tjek domænekendskab** — refererer jeg til noget specifikt fra deres hjemmeside/produkter?
-4. **Tjek længde** — max 1-2 sider. Skær det der er overflødigt.
-5. **Sammenlign med gamle ansøgninger** — er der stærke argumenter fra `past-applications/` jeg har glemt?
+2. **Tjek sektioner og punkter** — er de konkrete nok? Vil modtageren forstå hvad jeg faktisk vil bygge/gøre?
+3. **Tjek quoteSnippets** — dækker de de vigtigste nøgleord fra jobbeskrivelsen?
+4. **Tjek domænekendskab** — refererer jeg til noget specifikt fra deres hjemmeside/produkter?
+5. **Tjek længde** — hold det kort. Skær overflødigt.
+6. **Sammenlign med gamle ansøgninger** — er der stærke argumenter fra `past-applications/` jeg har glemt?
 
 ## Input
 
-### Nuværende udkast
-(INDSÆT UDKAST HER)
+### Nuværende config.ts eller udkast
+(INDSÆT CONFIG ELLER TEKST HER)
 
 ### Jobopslag
 (INDSÆT JOBOPSLAG HER)
@@ -26,5 +31,4 @@ Jeg har et udkast til en motiveret ansøgning. Hjælp mig med at:
 
 Giv mig:
 1. **Feedback** — punkt for punkt
-2. **Forbedret version** — den fulde tekst, klar til brug
-3. **Opdateret config.ts** — hvis der er ændringer til coverLetter felterne
+2. **Opdateret config.ts** — fuld coverLetter med greeting, opening, quoteSnippets, sections, closing, evt. illustration
