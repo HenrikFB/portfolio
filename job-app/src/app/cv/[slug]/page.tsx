@@ -3,7 +3,8 @@ import { getApplication, getApplicationSlugs } from "@/data/applications";
 import { templates } from "@/data/templates";
 import { CompanyBrand } from "@/components/shared/CompanyBrand";
 import { PrintButton } from "@/components/shared/PrintWrapper";
-import { CVLayout } from "@/components/layouts/CVLayout";
+import { CVPage1 } from "@/components/cv/CVPage1";
+import { CVPage2 } from "@/components/cv/CVPage2";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -34,7 +35,8 @@ export default async function CVPage({
             <ArrowLeft size={14} /> Tilbage til oversigt
           </Link>
         </div>
-        <CVLayout template={template} config={config} />
+        <CVPage1 template={template} />
+        <CVPage2 template={template} />
         <PrintButton />
       </div>
     </CompanyBrand>

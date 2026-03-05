@@ -3,8 +3,9 @@ import { getApplication, getApplicationSlugs } from "@/data/applications";
 import { templates } from "@/data/templates";
 import { CompanyBrand } from "@/components/shared/CompanyBrand";
 import { PrintButton } from "@/components/shared/PrintWrapper";
-import { CoverLetterLayout } from "@/components/layouts/CoverLetterLayout";
-import { CVLayout } from "@/components/layouts/CVLayout";
+import { LetterPage } from "@/components/letter/LetterPage";
+import { CVPage1 } from "@/components/cv/CVPage1";
+import { CVPage2 } from "@/components/cv/CVPage2";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -34,15 +35,11 @@ export default async function CombinedPage({
           >
             <ArrowLeft size={14} /> Tilbage til oversigt
           </Link>
-          <p className="mt-2 text-xs text-[var(--muted)]">
-            Samlet visning — Cmd+P → Margener: Ingen → Slå sidehoved/sidefod
-            fra.
-          </p>
         </div>
 
-        <CoverLetterLayout config={config} />
-        <div className="page-break" />
-        <CVLayout template={template} config={config} />
+        <LetterPage config={config} />
+        <CVPage1 template={template} />
+        <CVPage2 template={template} />
 
         <PrintButton />
       </div>

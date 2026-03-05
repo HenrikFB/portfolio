@@ -30,28 +30,29 @@ h1, h2, h3, h4, h5 {
   font-family: var(--font-heading), var(--font-sans), system-ui, sans-serif;
 }
 
-/* A4 page container */
-.a4-page {
+/* ═══ Top-level @page — forces Chrome to use 0 margin ═══ */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+/* ═══ Fixed A4 page: exactly one printed page ═══ */
+.page {
   width: 210mm;
-  min-height: 297mm;
+  height: 297mm;
   margin: 0 auto;
-  padding: 20mm 22mm;
   background: white;
   position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.a4-page + .a4-page,
-.page-break + .a4-page {
-  margin-top: 32px;
+.page + .page {
+  margin-top: 24px;
 }
 
-/* Print styles */
+/* ═══ Print ═══ */
 @media print {
-  @page {
-    size: A4;
-    margin: 0mm;
-  }
-
   html, body {
     background: white !important;
     -webkit-print-color-adjust: exact;
@@ -68,50 +69,29 @@ h1, h2, h3, h4, h5 {
     background: white !important;
     padding: 0 !important;
     margin: 0 !important;
-    min-height: 0 !important;
   }
 
-  .a4-page {
+  .page {
     width: 100% !important;
-    min-height: 0 !important;
     height: auto !important;
-    padding: 15mm 18mm !important;
+    min-height: 100vh;
     margin: 0 !important;
     box-shadow: none !important;
     border: none !important;
     border-radius: 0 !important;
-    background: white !important;
+    page-break-after: always;
+    break-after: page;
   }
 
-  .a4-page.cv-page {
-    padding: 0 !important;
-  }
-
-  .cv-inner {
-    min-height: 0 !important;
-  }
-
-  .page-break {
-    break-before: page;
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 0 !important;
-    line-height: 0 !important;
-    font-size: 0 !important;
-  }
-
-  .page-break + .a4-page {
-    margin-top: 0 !important;
-  }
-
-  .avoid-break {
-    break-inside: avoid;
+  .page:last-child {
+    page-break-after: auto;
+    break-after: auto;
   }
 }
 
-/* Screen-only: subtle shadow for document feel */
+/* ═══ Screen: shadow for document feel ═══ */
 @media screen {
-  .a4-page {
+  .page {
     box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04);
     border: 1px solid var(--border);
     border-radius: 2px;

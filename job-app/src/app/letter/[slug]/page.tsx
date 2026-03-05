@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { getApplication, getApplicationSlugs } from "@/data/applications";
 import { CompanyBrand } from "@/components/shared/CompanyBrand";
 import { PrintButton } from "@/components/shared/PrintWrapper";
-import { CoverLetterLayout } from "@/components/layouts/CoverLetterLayout";
+import { LetterPage } from "@/components/letter/LetterPage";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -10,7 +10,7 @@ export async function generateStaticParams() {
   return getApplicationSlugs().map((slug) => ({ slug }));
 }
 
-export default async function LetterPage({
+export default async function LetterRoute({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -30,7 +30,7 @@ export default async function LetterPage({
             <ArrowLeft size={14} /> Tilbage til oversigt
           </Link>
         </div>
-        <CoverLetterLayout config={config} />
+        <LetterPage config={config} />
         <PrintButton />
       </div>
     </CompanyBrand>
