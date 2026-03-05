@@ -97,10 +97,12 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
           >
             Experience
           </h2>
-          <p className="mt-1.5 text-[0.68rem]">
+          <p className="mt-1.5 text-[0.68rem] text-[var(--muted)]">
             <a href={profile.links.portfolio} target="_blank" rel="noopener" className="underline font-medium" style={{ color: "var(--accent)" }}>
               henrikfb.github.io/portfolio
             </a>
+            {" · "}
+            Recommendations available upon request
           </p>
         </div>
 

@@ -14,30 +14,6 @@ export function CVPage2({ template }: { template: TemplateProfile }) {
         className="w-[68mm] shrink-0 flex flex-col px-5 pt-10 pb-8 text-white"
         style={{ background: "var(--accent)" }}
       >
-        {/* Languages */}
-        <SidebarSection title="Languages">
-          <div className="space-y-[3px] text-[0.66rem] text-white/75">
-            {profile.languages.map((l) => (
-              <p key={l.language}>
-                {l.language}: {l.level}
-              </p>
-            ))}
-          </div>
-        </SidebarSection>
-
-        {/* Recommendations */}
-        <SidebarSection title="Recommendations">
-          <p className="text-[0.6rem] text-white/50 mb-1.5">Available upon request</p>
-          <ul className="space-y-[3px]">
-            {profile.recommendations.map((r) => (
-              <li key={r} className="text-[0.66rem] text-white/75">
-                • {r}
-              </li>
-            ))}
-          </ul>
-        </SidebarSection>
-
-        {/* Spacer — this area can hold a company logo later */}
         <div className="mt-auto flex items-end justify-center pb-4">
           <div className="text-center">
             <div className="mx-auto h-[1.5px] w-10 bg-white/25 mb-3" />
@@ -109,23 +85,6 @@ export function CVPage2({ template }: { template: TemplateProfile }) {
           Voluntary work: {profile.voluntaryWork}
         </p>
       </div>
-    </div>
-  );
-}
-
-function SidebarSection({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="mb-5">
-      <h3 className="mb-1.5 text-[0.6rem] font-bold uppercase tracking-[0.1em] text-white/50">
-        {title}
-      </h3>
-      {children}
     </div>
   );
 }
