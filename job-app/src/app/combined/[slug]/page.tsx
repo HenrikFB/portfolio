@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getApplication, getApplicationSlugs } from "@/data/applications";
+import { loadIllustrationSvg } from "@/data/illustration";
 import { templates } from "@/data/templates";
 import { CompanyBrand } from "@/components/shared/CompanyBrand";
 import { PrintButton } from "@/components/shared/PrintWrapper";
@@ -25,6 +26,8 @@ export default async function CombinedPage({
   const template = templates[config.template];
   if (!template) notFound();
 
+  const illustrationSvg = await loadIllustrationSvg(config.coverLetter?.illustration);
+
   return (
     <CompanyBrand config={config}>
       <div className="print-wrapper min-h-screen bg-gray-50 py-10">
@@ -37,7 +40,7 @@ export default async function CombinedPage({
           </Link>
         </div>
 
-        <LetterPage config={config} />
+        <LetterPage config={config} illustrationSvg={illustrationSvg} />
         <CVPage1 template={template} />
         <CVPage2 template={template} />
 

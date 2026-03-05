@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getApplication, getApplicationSlugs } from "@/data/applications";
+import { loadIllustrationSvg } from "@/data/illustration";
 import { CompanyBrand } from "@/components/shared/CompanyBrand";
 import { PrintButton } from "@/components/shared/PrintWrapper";
 import { LetterPage } from "@/components/letter/LetterPage";
@@ -19,6 +20,8 @@ export default async function LetterRoute({
   const config = await getApplication(slug);
   if (!config) notFound();
 
+  const illustrationSvg = await loadIllustrationSvg(config.coverLetter?.illustration);
+
   return (
     <CompanyBrand config={config}>
       <div className="print-wrapper min-h-screen bg-gray-50 py-10">
@@ -30,7 +33,7 @@ export default async function LetterRoute({
             <ArrowLeft size={14} /> Tilbage til oversigt
           </Link>
         </div>
-        <LetterPage config={config} />
+        <LetterPage config={config} illustrationSvg={illustrationSvg} />
         <PrintButton />
       </div>
     </CompanyBrand>
