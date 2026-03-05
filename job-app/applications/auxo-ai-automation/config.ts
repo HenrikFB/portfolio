@@ -52,8 +52,7 @@ export const config: CompanyConfig = {
         ],
       },
     ],
-    closing:
-      "Jeg ser frem til at høre fra jer. Jeg er klar til at starte hurtigt og er fleksibel ift. on-site i Esbjerg.",
+    closing: "",
     illustration: "/illustrations/auxo-ai.svg",
   },
 };

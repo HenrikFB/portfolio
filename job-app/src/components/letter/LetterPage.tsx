@@ -13,7 +13,7 @@ export function LetterPage({
     !hasSections && coverLetter.projectProposals;
 
   return (
-    <div className="page px-[22mm] pt-[18mm] pb-[16mm] flex flex-col">
+    <div className="page px-[22mm] pt-[18mm] pb-[6mm] flex flex-col">
       {/* Content only — no header/footer, starts with greeting */}
       <div className="space-y-3.5 text-[0.86rem] leading-[1.7]">
         <p>{coverLetter.greeting}</p>
@@ -44,7 +44,7 @@ export function LetterPage({
 
       {/* Sections */}
       {hasSections && (
-        <div className="space-y-5 mb-6">
+        <div className="space-y-5 mb-2">
           {coverLetter.sections!.map((section, i) => (
             <div key={i}>
               <h3
@@ -81,24 +81,24 @@ export function LetterPage({
       )}
 
       {/* Closing */}
-      <p className="text-[0.86rem] leading-[1.7]">{coverLetter.closing}</p>
+      {coverLetter.closing && (
+        <p className="text-[0.86rem] leading-[1.7]">{coverLetter.closing}</p>
+      )}
 
-      {/* Illustration — right after closing (inline SVG for reliable render/print) */}
+      {/* Illustration — extends to page edges, sits directly below text */}
       {(illustrationSvg || coverLetter.illustration) && (
-        <div className="mt-6 w-full max-w-[140mm]" style={{ maxWidth: "140mm" }}>
-          {illustrationSvg ? (
-            <div
-              className="[&_svg]:w-full [&_svg]:h-auto [&_svg]:block"
-              dangerouslySetInnerHTML={{ __html: illustrationSvg }}
-            />
-          ) : (
-            <img
-              src={coverLetter.illustration!}
-              alt=""
-              className="w-full h-auto block"
-              style={{ maxWidth: "140mm" }}
-            />
-          )}
+        <div className="mt-3 -mx-[22mm] w-[calc(100%+44mm)] max-w-[210mm] [&_svg]:scale-[0.92] [&_svg]:origin-top-center">
+          <div className="w-full [&_svg]:w-full [&_svg]:h-auto [&_svg]:block">
+            {illustrationSvg ? (
+              <div dangerouslySetInnerHTML={{ __html: illustrationSvg }} />
+            ) : (
+              <img
+                src={coverLetter.illustration!}
+                alt=""
+                className="w-full h-auto block"
+              />
+            )}
+          </div>
         </div>
       )}
     </div>

@@ -18,7 +18,7 @@
   <circle cx="450" cy="58" r="46" fill="none" stroke="#1a1a1a" stroke-width="2.2"/>
   <rect x="469" y="87" width="29" height="13" fill="white"/>
   <text x="428" y="66" class="f" font-size="21" fill="#1a1a1a" font-weight="300" letter-spacing="1">auxo</text>
-  <text x="450" y="124" text-anchor="middle" class="tag">FULDENDER DIN DIGITALE VÆKST</text>
+  <text x="450" y="124" text-anchor="middle" class="tag">FULDENDER DIN DIGITALE V&#198;KST</text>
 
   <path d="M418,103 C372,148 298,188 236,222" fill="none" stroke="#2B9BD6" stroke-width="1.4" stroke-linecap="round" opacity="0.28"/>
   <path d="M408,107 C354,160 272,204 200,302" fill="none" stroke="#2B9BD6" stroke-width="1.0" stroke-linecap="round" opacity="0.14"/>
