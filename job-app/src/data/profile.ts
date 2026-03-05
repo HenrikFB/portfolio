@@ -8,7 +8,7 @@ export const profile = {
   links: {
     github: "https://github.com/HenrikFB",
     linkedin: "https://www.linkedin.com/in/henrik-fog-bunzel-894828a5/",
-    portfolio: "https://henrikfb.github.io/portfolio",
+    portfolio: "https://henrikfb.github.io/portfolio/",
   },
   personalProfile:
     "I am a software developer with an interdisciplinary background. It comes from both education and private projects. OOP comes most naturally to me, but I have read books about LISP, Haskell, and Scala for FP and declarative thinking. My hobby is trying out new hobbies. I have previously also done volunteer work.",
@@ -164,13 +164,12 @@ export const profile = {
       title: "Accounting & Reconciliation Platform",
       category: "Full-Stack Platform",
       description:
-        "Annual report generation, creditor/debtor reconciliation, automated receipt fetching from email, and AI-assisted bookkeeping modules.",
-      tags: ["Full-Stack", "Automation", "AI", "Finance"],
+        "Kreditor/Debitor/bank reconciliation software system. Document parsing (bilags parsing) and ERP systems integration.",
+      tags: ["Full-Stack", "Automation", "Finance"],
       highlights: [
-        "Automated receipt fetching from email",
-        "AI-assisted bookkeeping categorization",
-        "Creditor/debtor reconciliation engine",
-        "Annual report generation",
+        "Kreditor/Debitor/bank reconciliation system",
+        "Document parsing (bilags parsing)",
+        "ERP systems integration",
       ],
     },
     {

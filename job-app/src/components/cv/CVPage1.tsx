@@ -14,13 +14,22 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
           <span className="text-3xl font-bold text-white/40">HF</span>
         </div>
 
-        {/* Name */}
+        {/* Name + Links */}
         <div className="text-center mb-7">
           <h1 className="text-[1.15rem] font-bold tracking-tight leading-tight uppercase">
             {profile.name}
           </h1>
           <p className="mt-1 text-[0.62rem] uppercase tracking-[0.18em] text-white/60">
             {template.profileTitle}
+          </p>
+          <p className="mt-2 text-[0.64rem] text-white/90">
+            <a href={profile.links.portfolio} target="_blank" rel="noopener" className="underline font-medium hover:text-white transition-colors">
+              Portfolio
+            </a>
+            {" · "}
+            <a href={profile.links.linkedin} target="_blank" rel="noopener" className="underline hover:text-white transition-colors">LinkedIn</a>
+            {" · "}
+            <a href={profile.links.github} target="_blank" rel="noopener" className="underline hover:text-white transition-colors">GitHub</a>
           </p>
           <div className="mx-auto mt-3 h-[1.5px] w-10 bg-white/25" />
         </div>
@@ -68,8 +77,11 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
             <div className="space-y-[3px] text-[0.66rem] text-white/75">
               <p>{profile.email}</p>
               <p>{profile.phone}</p>
-              <p>LinkedIn: link</p>
-              <p>GitHub: link</p>
+              <p>
+                <a href={profile.links.linkedin} target="_blank" rel="noopener" className="underline hover:text-white transition-colors">LinkedIn</a>
+                {" · "}
+                <a href={profile.links.github} target="_blank" rel="noopener" className="underline hover:text-white transition-colors">GitHub</a>
+              </p>
             </div>
           </SidebarSection>
         </div>
@@ -77,13 +89,20 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
 
       {/* ── MAIN CONTENT ── */}
       <div className="flex-1 px-7 pt-10 pb-8">
-        {/* Experience heading */}
-        <h2
-          className="mb-5 pb-1.5 text-[1.1rem] font-bold tracking-tight border-b-[2.5px]"
-          style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
-        >
-          Experience
-        </h2>
+        {/* Experience heading + Portfolio */}
+        <div className="mb-5">
+          <h2
+            className="pb-1.5 text-[1.1rem] font-bold tracking-tight border-b-[2.5px]"
+            style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
+          >
+            Experience
+          </h2>
+          <p className="mt-1.5 text-[0.68rem]">
+            <a href={profile.links.portfolio} target="_blank" rel="noopener" className="underline font-medium" style={{ color: "var(--accent)" }}>
+              henrikfb.github.io/portfolio
+            </a>
+          </p>
+        </div>
 
         <div className="space-y-5">
           {profile.workExperience.map((job) => (
