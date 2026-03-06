@@ -32,5 +32,7 @@ export interface CompanyConfig {
     projectProposals?: string;
     closing: string;
     illustration?: string;
+    illustrationScale?: number;
+    illustrationMarginTop?: string;
   };
 }

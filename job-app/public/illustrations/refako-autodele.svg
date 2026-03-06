@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
   <defs>
     <style>
       .f   { font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
@@ -47,11 +47,14 @@
   <rect x="484" y="258" width="68" height="24" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.3"/>
   <text x="518" y="274" text-anchor="middle" class="f" font-size="9" fill="#059669">Odense</text>
 
-  <!-- Left: Reservedele -->
+  <!-- Left: Reservedele - Lucide car -->
   <g transform="translate(84,192)">
-    <rect x="4" y="8" width="44" height="28" rx="4" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
-    <path d="M14,20 L20,14 L26,20 L26,32 L14,32 Z" fill="none" stroke="#059669" stroke-width="1.5"/>
-    <circle cx="20" cy="26" r="3" fill="#059669"/>
+    <g transform="translate(2,2) scale(2)" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+      <circle cx="7" cy="17" r="2" stroke="#059669"/>
+      <path d="M9 17h6"/>
+      <circle cx="17" cy="17" r="2" stroke="#059669"/>
+    </g>
   </g>
   <text x="110" y="258" text-anchor="middle" class="lbl">Reservedele</text>
   <text x="110" y="272" text-anchor="middle" class="sub">Biler - Autodele</text>
@@ -66,42 +69,58 @@
   <text x="110" y="348" text-anchor="middle" class="lbl">Nummerplade</text>
   <text x="110" y="362" text-anchor="middle" class="sub">Find dele til bil</text>
 
-  <!-- Left: Chatbot -->
+  <!-- Left: Chatbot - Lucide bot-message-square -->
   <g transform="translate(84,372)">
-    <circle cx="26" cy="26" r="20" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
-    <path d="M14,20 Q26,14 38,20 L38,28 Q26,34 14,28 Z" fill="none" stroke="#059669" stroke-width="1.5"/>
-    <circle cx="20" cy="24" r="2" fill="#059669"/>
-    <circle cx="32" cy="24" r="2" fill="#059669"/>
+    <g transform="translate(2,2) scale(2)" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 6V2H8"/>
+      <path d="M15 11v2"/>
+      <path d="M2 12h2"/>
+      <path d="M20 12h2"/>
+      <path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/>
+      <path d="M9 11v2"/>
+    </g>
   </g>
   <text x="110" y="438" text-anchor="middle" class="lbl">Chatbot</text>
   <text x="110" y="452" text-anchor="middle" class="sub">Produkt - Kunde</text>
 
-  <!-- Right: Økonomi -->
+  <!-- Right: konomi - Lucide file-spreadsheet -->
   <g transform="translate(764,192)">
-    <rect x="4" y="8" width="44" height="36" rx="4" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
-    <text x="26" y="28" text-anchor="middle" class="f" font-size="14" fill="#059669">&#36;</text>
-    <path d="M14,34 L26,42 L38,34" fill="none" stroke="#059669" stroke-width="1.5"/>
+    <g transform="translate(2,2) scale(2)" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/>
+      <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+      <path d="M8 13h2" stroke="#059669"/>
+      <path d="M14 13h2" stroke="#059669"/>
+      <path d="M8 17h2" stroke="#059669"/>
+      <path d="M14 17h2" stroke="#059669"/>
+    </g>
   </g>
   <text x="790" y="258" text-anchor="middle" class="lbl">&#216;konomi</text>
   <text x="790" y="272" text-anchor="middle" class="sub">ERP - Afstemning</text>
 
-  <!-- Right: Logistik -->
+  <!-- Right: Logistik - Lucide truck -->
   <g transform="translate(764,282)">
-    <path d="M8,20 L20,8 L32,20 L32,40 L8,40 Z" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
-    <path d="M12,36 L28,36" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <circle cx="20" cy="28" r="4" fill="#059669"/>
+    <g transform="translate(2,2) scale(2)" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+      <path d="M15 18H9"/>
+      <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+      <circle cx="17" cy="18" r="2" stroke="#059669"/>
+      <circle cx="7" cy="18" r="2" stroke="#059669"/>
+    </g>
   </g>
   <text x="790" y="348" text-anchor="middle" class="lbl">Logistik</text>
   <text x="790" y="362" text-anchor="middle" class="sub">Levering - Flow</text>
 
-  <!-- Right: B2B/B2C -->
+  <!-- Right: Salg - Lucide chart-column-increasing -->
   <g transform="translate(764,372)">
-    <rect x="2" y="8" width="48" height="34" rx="5" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
-    <text x="26" y="28" text-anchor="middle" class="f" font-size="10" fill="#059669" font-weight="600">B2B</text>
-    <text x="26" y="38" text-anchor="middle" class="f" font-size="10" fill="#059669" font-weight="600">B2C</text>
+    <g transform="translate(2,2) scale(2)" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 17V9" stroke="#059669"/>
+      <path d="M18 17V5" stroke="#059669"/>
+      <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+      <path d="M8 17v-3" stroke="#059669"/>
+    </g>
   </g>
-  <text x="790" y="438" text-anchor="middle" class="lbl">Salg</text>
-  <text x="790" y="452" text-anchor="middle" class="sub">B2B - B2C</text>
+  <text x="790" y="434" text-anchor="middle" class="lbl" fill="#1a1a1a">Salg</text>
+  <text x="790" y="448" text-anchor="middle" class="sub" fill="#6b7280">B2B - B2C</text>
 
   <line x1="136" y1="218" x2="268" y2="252" stroke="#059669" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>
   <line x1="136" y1="308" x2="268" y2="295" stroke="#059669" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.35"/>

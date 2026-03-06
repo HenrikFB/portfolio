@@ -44,7 +44,15 @@ export function LetterPage({
 
       {/* Sections */}
       {hasSections && (
-        <div className="space-y-5 mb-2">
+        <div
+          className="space-y-5"
+          style={{
+            marginBottom:
+              (illustrationSvg || coverLetter.illustration) && coverLetter.illustrationMarginTop
+                ? "0"
+                : undefined,
+          }}
+        >
           {coverLetter.sections!.map((section, i) => (
             <div key={i}>
               <h3
@@ -87,7 +95,13 @@ export function LetterPage({
 
       {/* Illustration — extends to page edges, sits directly below text */}
       {(illustrationSvg || coverLetter.illustration) && (
-        <div className="mt-3 -mx-[22mm] w-[calc(100%+44mm)] max-w-[210mm] [&_svg]:scale-[0.92] [&_svg]:origin-top-center">
+        <div
+          className="-mx-[22mm] w-[calc(100%+44mm)] max-w-[210mm] [&_svg]:origin-top-center [&_svg]:scale-[var(--illustration-scale)]"
+          style={{
+            marginTop: coverLetter.illustrationMarginTop ?? "0.75rem",
+            ["--illustration-scale" as string]: coverLetter.illustrationScale ?? 0.92,
+          }}
+        >
           <div className="w-full [&_svg]:w-full [&_svg]:h-auto [&_svg]:block">
             {illustrationSvg ? (
               <div dangerouslySetInnerHTML={{ __html: illustrationSvg }} />

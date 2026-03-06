@@ -53,5 +53,7 @@ export const config: CompanyConfig = {
     ],
     closing: "",
     illustration: "/illustrations/refako-autodele.svg",
+    illustrationScale: 1,
+    illustrationMarginTop: "0.125rem",
   },
 };
