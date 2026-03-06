@@ -2,6 +2,7 @@ import { CompanyConfig } from "./types";
 
 const configs: Record<string, () => Promise<{ config: CompanyConfig }>> = {
   "auxo-ai-automation": () => import("../../applications/auxo-ai-automation/config"),
+  "auxo-udvikler": () => import("../../applications/auxo-udvikler/config"),
 };
 
 export function getApplicationSlugs(): string[] {

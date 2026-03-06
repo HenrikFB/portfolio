@@ -34,26 +34,23 @@
   <rect x="250" y="386" width="400" height="22" rx="5" fill="#eae9e5" stroke="#1a1a1a" stroke-width="1.8"/>
   <rect x="374" y="392" width="88" height="11" rx="5" fill="#d8d7d3" stroke="#ccc" stroke-width="1"/>
 
-  <rect x="296" y="200" width="66" height="28" rx="5" fill="#2B9BD6"/>
-  <text x="329" y="218" text-anchor="middle" class="f" font-size="9" fill="white" font-weight="600">webhook</text>
-  <line x1="362" y1="214" x2="382" y2="214" stroke="#ccc" stroke-width="1.3" marker-end="url(#ma)"/>
-  <rect x="384" y="200" width="54" height="28" rx="5" fill="#1a1a1a"/>
-  <text x="411" y="218" text-anchor="middle" class="f" font-size="9" fill="white" font-weight="600">n8n</text>
-  <line x1="438" y1="214" x2="458" y2="214" stroke="#ccc" stroke-width="1.3" marker-end="url(#ma)"/>
-  <rect x="460" y="200" width="54" height="28" rx="5" fill="none" stroke="#3DB87A" stroke-width="1.7"/>
-  <text x="487" y="218" text-anchor="middle" class="f" font-size="9" fill="#3DB87A" font-weight="600">AI</text>
+  <!-- Row 1: CMS (blue) -->
+  <rect x="296" y="200" width="72" height="28" rx="5" fill="#EDF6FD" stroke="#2B9BD6" stroke-width="1.3"/>
+  <text x="332" y="218" text-anchor="middle" class="f" font-size="9" fill="#2B9BD6" font-weight="600">Drupal</text>
+  <rect x="382" y="200" width="80" height="28" rx="5" fill="#EDF6FD" stroke="#2B9BD6" stroke-width="1.3"/>
+  <text x="422" y="218" text-anchor="middle" class="f" font-size="9" fill="#2B9BD6" font-weight="600">WordPress</text>
+  <rect x="476" y="200" width="78" height="28" rx="5" fill="#EDF6FD" stroke="#2B9BD6" stroke-width="1.3"/>
+  <text x="515" y="218" text-anchor="middle" class="f" font-size="9" fill="#2B9BD6" font-weight="600">Shopify</text>
 
-  <line x1="411" y1="228" x2="411" y2="246" stroke="#e8e8e6" stroke-width="1.1"/>
-  <line x1="323" y1="246" x2="534" y2="246" stroke="#e8e8e6" stroke-width="1.1"/>
-  <line x1="329" y1="246" x2="329" y2="258" stroke="#e8e8e6" stroke-width="1.1"/>
-  <rect x="296" y="258" width="66" height="24" rx="4" fill="#EDF6FD" stroke="#2B9BD6" stroke-width="1.3"/>
-  <text x="329" y="274" text-anchor="middle" class="f" font-size="9" fill="#2B9BD6">e-mail</text>
-  <line x1="411" y1="246" x2="411" y2="258" stroke="#e8e8e6" stroke-width="1.1"/>
-  <rect x="384" y="258" width="54" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
-  <text x="411" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A">CRM</text>
-  <line x1="519" y1="246" x2="519" y2="258" stroke="#e8e8e6" stroke-width="1.1"/>
-  <rect x="487" y="258" width="64" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
-  <text x="519" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A">SoMe</text>
+  <!-- Row 2: Frontend (green) -->
+  <rect x="296" y="258" width="52" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
+  <text x="322" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A" font-weight="600">HTML</text>
+  <rect x="358" y="258" width="48" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
+  <text x="382" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A" font-weight="600">SCSS</text>
+  <rect x="416" y="258" width="62" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
+  <text x="447" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A" font-weight="600">JavaScript</text>
+  <rect x="488" y="258" width="52" height="24" rx="4" fill="#EDFAF4" stroke="#3DB87A" stroke-width="1.3"/>
+  <text x="514" y="274" text-anchor="middle" class="f" font-size="9" fill="#3DB87A" font-weight="600">UX/UI</text>
 
   <g transform="translate(84,192)">
     <circle cx="26" cy="26" r="24" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
@@ -82,7 +79,7 @@
     <path d="M22,32 l3,3 l5-6" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <text x="110" y="438" text-anchor="middle" class="lbl">Webshop</text>
-  <text x="110" y="452" text-anchor="middle" class="sub">WooCommerce</text>
+  <text x="110" y="452" text-anchor="middle" class="sub">WooCommerce - Shopify</text>
 
   <g transform="translate(764,192)">
     <circle cx="26" cy="26" r="24" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
