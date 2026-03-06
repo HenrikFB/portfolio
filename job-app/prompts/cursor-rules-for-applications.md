@@ -15,14 +15,14 @@ job-app/
 ├── src/data/profile.ts          ← mine faste data (erfaring, skills, projekter)
 ├── src/data/templates/          ← profilskabeloner (ai-automation, dotnet, fullstack, backend, m365-consultant)
 ├── src/data/types.ts            ← TypeScript interfaces
-├── applications/[slug]/         ← aktive ansøgninger
+├── applications/[slug]/         ← alle ansøgninger i denne app (layout, struktur, referencer)
 │   ├── config.ts                ← coverLetter: greeting, opening, quoteSnippets, sections, closing, illustration?
-│   ├── job-description.md       ← jobopslag (reference)
-│   └── noter/                   ← research og creation notes
-│       ├── creation of [firma] notes.md
+│   ├── job-beskrivelsen.md      ← jobopslag (brugerens kilde)
+│   └── noter/                   ← brugerens noter, inputs, research
+│       ├── Skabelsen.md, creation notes, osv.
 │       ├── hjemmeside/sider.md  ← evt. kopi af virksomhedens side
 │       └── Design/              ← evt. custom illustration (SVG)
-├── past-applications/           ← gamle ansøgninger som markdown (søgbar kontekst)
+├── past-applications/           ← brugeren indsætter manuelt gamle ansøgninger (før denne app) til reference
 ├── prompts/                     ← prompt templates
 ├── public/illustrations/        ← SVG-filer til ansøgninger
 └── src/app/                     ← routes: /, /cv/[slug], /letter/[slug], /combined/[slug]
@@ -41,15 +41,16 @@ Ingen header/footer på brevet — kontaktinfo står i CV'et.
 
 ### Workflow for ny ansøgning
 
-1. Læs jobopslag + virksomhedens hjemmeside
-2. Søg `past-applications/` for lignende roller/domæner
-3. Vælg template fra `src/data/templates/`
-4. Opret `applications/[ny-slug]/noter/creation of [firma] notes.md` med research
+1. Læs `job-beskrivelsen.md` + brugerens noter i `noter/` (fx Skabelsen.md, creation notes)
+2. Brug `applications/` til at forstå layout, struktur og få ideer fra eksisterende ansøgninger
+3. Evt. søg `past-applications/` for lignende roller/domæner (brugerens manuelle referencer)
+4. Vælg template fra `src/data/templates/`
 5. Opret `applications/[ny-slug]/config.ts` med quoteSnippets, sections, osv.
 6. Tilføj slug til `src/data/applications.ts` configs-map
 7. Evt. tilføj illustration i `public/illustrations/` og reference i config
 8. Preview på `/combined/[slug]` → Cmd+P → Print som PDF
-9. Gem en kopi i `past-applications/` til næste gang
+
+**Opret ikke** filer i `past-applications/` — brugeren indsætter gamle ansøgninger manuelt. Opret ikke ekstra markdown-filer (fx job-description.md) — brug job-beskrivelsen.md og noter/ som input.
 
 ### Roller (templates)
 

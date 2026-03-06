@@ -34,7 +34,7 @@ export function CVLayout({
               {profile.name}
             </h1>
             <p className="mt-1 text-[0.7rem] uppercase tracking-[0.2em] text-white/70">
-              {template.profileTitle}
+              {profile.cvTitle}
             </p>
             <div
               className="mx-auto mt-3 h-[2px] w-12"

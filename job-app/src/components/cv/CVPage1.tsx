@@ -21,7 +21,7 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
             {profile.name}
           </h1>
           <p className="mt-1 text-[0.62rem] uppercase tracking-[0.18em] text-white/60">
-            {template.profileTitle}
+            {profile.cvTitle}
           </p>
           <p className="mt-2 text-[0.64rem] text-white/90">
             <a href={profile.links.portfolio} target="_blank" rel="noopener" className="underline font-medium hover:text-white transition-colors">

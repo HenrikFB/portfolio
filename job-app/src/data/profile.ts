@@ -1,6 +1,7 @@
 export const profile = {
   name: "Henrik Fog Bunzel",
   title: "Software Developer",
+  cvTitle: "Software & AI Engineer",
   email: "henrik@fogbunzel.dk",
   phone: "+45 61603125",
   location: "Denmark",

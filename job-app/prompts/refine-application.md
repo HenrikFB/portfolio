@@ -17,7 +17,7 @@ Jeg har et udkast til en motiveret ansøgning. Hjælp mig med at:
 3. **Tjek quoteSnippets** — dækker de de vigtigste nøgleord fra jobbeskrivelsen?
 4. **Tjek domænekendskab** — refererer jeg til noget specifikt fra deres hjemmeside/produkter?
 5. **Tjek længde** — hold det kort. Skær overflødigt.
-6. **Sammenlign med gamle ansøgninger** — er der stærke argumenter fra `past-applications/` jeg har glemt?
+6. **Sammenlign med andre ansøgninger** — er der stærke argumenter fra `applications/` eller `past-applications/` jeg har glemt?
 
 ## Input
 

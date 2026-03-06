@@ -10,8 +10,8 @@ Jeg er Henrik Fog Bunzel, software developer med kandidat + bachelor i IT-Produk
 
 Min profil, skills, projekter, og erfaring ligger i: `job-app/src/data/profile.ts`
 Mine template profiler (fokusområder): `job-app/src/data/templates/` — ai-automation, dotnet-developer, fullstack, backend, m365-consultant
-Mine gamle ansøgninger med tone, argumenter, og noter: `job-app/past-applications/`
-Eksempel på fuld struktur: `job-app/applications/auxo-ai-automation/`
+Layout og struktur: `job-app/applications/` — alle ansøgninger med reel struktur (fx auxo-udvikler, auxo-ai-automation, refako-autodele-udvikler)
+Evt. gamle argumenter: `job-app/past-applications/` — bruger indsætter manuelt
 
 ## Ansøgningsformat (altid samme struktur)
 
@@ -22,8 +22,8 @@ Ingen header/footer med kontaktinfo — det står i CV'et.
 
 Jeg har en ny jobansøgning. Hjælp mig med at:
 
-1. **Analysér jobopslaget** — hvad leder de efter? Nøgleord, krav, tone, tech stack.
-2. **Find lignende gamle ansøgninger** — søg i `past-applications/` efter lignende rolle, domæne eller tech. Genbrug stærke argumenter.
+1. **Læs input** — `job-beskrivelsen.md` + brugerens noter i `noter/` (fx Skabelsen.md, creation notes). Analysér: hvad leder de efter? Nøgleord, krav, tone, tech stack.
+2. **Brug applications/** — se layout og struktur i `applications/` (auxo-udvikler, refako-autodele-udvikler, osv.). Evt. søg `past-applications/` for gamle argumenter.
 3. **Vælg template** — passer til rollen (.NET, Full stack, AI/automation, Backend, M365, IT-konsulent osv.).
 4. **Skriv motiveret ansøgning** i det nye format (dansk eller engelsk):
    - **greeting:** "Hej [Firma]," / "Dear [Company],"
@@ -36,7 +36,7 @@ Jeg har en ny jobansøgning. Hjælp mig med at:
    - **closing:** evt. kort afslutning — eller tom string
    - **illustration:** evt. `/illustrations/[slug].svg` hvis der er custom, ellers udelad
 5. **Generer config.ts** med coverLetter: greeting, opening, quoteSnippets, sections, closing, illustration?
-6. **Foreslå noter-struktur** — `applications/[slug]/noter/creation of [firma] notes.md` + evt. `hjemmeside/sider.md`, `Design/` til illustration
+6. **Lever implementation** — config.ts, evt. illustration. Generér ikke ekstra markdown-filer; bruger har job-beskrivelsen og noter.
 
 ## Input
 
@@ -59,5 +59,4 @@ Jeg har en ny jobansøgning. Hjælp mig med at:
 Giv mig:
 1. **Analyse** — kort opsummering af hvad de søger og min vinkel
 2. **config.ts** — komplet fil til `applications/[slug]/config.ts` med quoteSnippets, sections, osv.
-3. **creation notes** — udkast til `noter/creation of [firma] notes.md` (research, gamle ansøgninger, domæne)
-4. **past-application markdown** — fil til `past-applications/` til næste gang
+3. **Evt. illustration** — hvis custom SVG ønskes
