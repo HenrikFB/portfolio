@@ -17,38 +17,38 @@ export function CVPage2({ template }: { template: TemplateProfile }) {
         <SidebarSection title="Services & Technologies">
           <ServiceBlock
             title="AI Engineering"
-            desc="LLM integrations, RAG pipelines, fine-tuning."
-            tags={["RAG", "OpenAI", "LangChain", "Vector DBs"]}
+            desc="Agent workflows, context/data handling. Document extraction, unstructured→structured. Semantic search, graph DBs. MCP, LangGraph."
+            tags={["RAG", "LangChain", "LlamaIndex", "Azure AI", "n8n", "MCP", "LangGraph", "Vector DBs"]}
           />
           <ServiceBlock
             title="Automation"
-            desc="Workflows, data pipelines, internal processes."
-            tags={["n8n", "Zapier", "Custom Scripts", "RPA"]}
+            desc="Business automation, workflows, cross-system integration."
+            tags={["n8n", "UiPath", "Power Automate", "Python", "API integrations", "RPA"]}
           />
           <ServiceBlock
             title="Software Development"
-            desc="Web & mobile apps, modern stacks."
-            tags={["React", "Next.js", "React Native", ".NET"]}
+            desc="Backend: .NET, Nest.js, Python. Frontend: Next.js, Angular, Blazor. Native: Android, WinUI3."
+            tags={[".NET", "Nest.js", "Python", "Next.js", "Angular", "Blazor", "Android", "WinUI3"]}
           />
           <ServiceBlock
-            title="APIs & SDKs"
-            desc="Evaluation and integration of external platforms."
-            tags={["Stripe", "Supabase", "Twilio", "Mapbox"]}
+            title="MVPs & Go-to-Market"
+            desc="Idea to market. Discovery, validation, milestones, demonstrable progress."
+            tags={["Rapid Prototyping", "A/B Testing", "Analytics"]}
           />
           <ServiceBlock
-            title="MVPs"
-            desc="Rapid prototyping, validation, launch strategy."
-            tags={["A/B Testing", "Analytics"]}
-          />
-          <ServiceBlock
-            title="Hardware & IoT"
-            desc="Sensors, microcontrollers, cloud connections."
-            tags={["Arduino", "Raspberry Pi", "MQTT", "BLE"]}
+            title="Hardware, IoT & Cloud"
+            desc="Sensors, circuits, components. Distributed systems, Web of Things, security, Azure."
+            tags={["Arduino", "Raspberry Pi", "MQTT", "Azure", "Distributed Systems"]}
           />
           <ServiceBlock
             title="IT Compliance & Security"
-            desc="Regulatory compliance, governance frameworks."
-            tags={["Azure", "GDPR", "Risk Assessment"]}
+            desc="Cybersecurity, NIS2, D-mærket, SC-900. Emergency communication, cyber awareness. BonusCyberKnowHow (6 weeks)."
+            tags={["NIS2", "D-mærket", "SC-900", "GDPR", "Risk Management"]}
+          />
+          <ServiceBlock
+            title="Deep Learning & Computer Vision"
+            desc="PyTorch, transfer learning, CNN, image analysis. Supervised & unsupervised."
+            tags={["PyTorch", "CNN", "Transfer Learning", "Computer Vision"]}
           />
         </SidebarSection>
         <div className="mt-auto flex items-end justify-center pb-4">
@@ -153,7 +153,7 @@ function ServiceBlock({
   tags: string[];
 }) {
   return (
-    <div className="mb-2.5">
+    <div className="mb-2">
       <span className="text-[0.56rem] font-semibold text-white/90 block">{title}</span>
       <p className="text-[0.5rem] leading-snug text-white/70 mt-0.5 mb-1">{desc}</p>
       <div className="flex flex-wrap gap-[3px]">
