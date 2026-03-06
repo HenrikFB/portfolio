@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 
-export function PrintButton() {
+export function PrintButton({ documentTitle }: { documentTitle?: string }) {
   const [showTip, setShowTip] = useState(false);
 
   function handlePrint() {
     const originalTitle = document.title;
-    document.title = " ";
+    document.title = documentTitle ?? `${originalTitle || "Ansøgning"}`;
 
     window.print();
 

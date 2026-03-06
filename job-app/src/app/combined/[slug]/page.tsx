@@ -46,7 +46,7 @@ export default async function CombinedPage({
           <CVPage2 template={template} />
         </div>
 
-        <PrintButton />
+        <PrintButton documentTitle={`${config.companyName} - Ansøgning`} />
       </div>
     </CompanyBrand>
   );
