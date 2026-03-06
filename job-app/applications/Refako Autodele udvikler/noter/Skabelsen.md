@@ -58,6 +58,6 @@ ____
 
 
 
-4)
+4) Ændring figuren/SVG som jeg plejer i de andre appliaktioner til dette job + tech stack. Biler reservedele, webshop, Lager & Logisik og økononomi. Bare prøv dig frem. 
 
 
