@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5 {
     break-after: page;
   }
 
-  .page:last-child {
+  .print-pages .page:last-child {
     page-break-after: auto;
     break-after: auto;
   }

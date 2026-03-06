@@ -62,7 +62,7 @@ export const profile = {
     "9-10 weeks at AMU JUUL: Chatbot + dynamic UI, AI Engineering, RAG, vector db, and web",
   ],
   personalProject:
-    "I'm always researching something so please ask. It's all the way from marketing/paid SoMe to now LLM and agents. https://github.com/HenrikFB/email-app",
+    "I'm always researching something so please ask. It's all the way from marketing/paid SoMe to now LLM and agents. https://github.com/HenrikFB/",
   previousJobs:
     "Voluntary work, warehouse work, Wolt, Swimming coach, package campaigns.",
   voluntaryWork:
@@ -152,7 +152,7 @@ export const profile = {
       category: "AI + Data Extraction",
       description:
         "Extracts categories, product numbers, and price tiers from restaurant menus (PDF/images) into structured JSON for POS systems.",
-      tags: ["LLama Parse", "GPT", "OCR", "Data Pipeline"],
+      tags: ["LLama Parse", "Reasoning", "OCR", "Data Pipeline"],
       highlights: [
         "PDF → image → markdown → structured JSON",
         "LLama Parse for document extraction",

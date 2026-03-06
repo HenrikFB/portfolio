@@ -40,9 +40,11 @@ export default async function CombinedPage({
           </Link>
         </div>
 
-        <LetterPage config={config} illustrationSvg={illustrationSvg} />
-        <CVPage1 template={template} />
-        <CVPage2 template={template} />
+        <div className="print-pages">
+          <LetterPage config={config} illustrationSvg={illustrationSvg} />
+          <CVPage1 template={template} />
+          <CVPage2 template={template} />
+        </div>
 
         <PrintButton />
       </div>

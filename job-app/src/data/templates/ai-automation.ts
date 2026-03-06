@@ -1,7 +1,7 @@
 import { TemplateProfile } from "../types";
 
 export const aiAutomation: TemplateProfile = {
-  profileTitle: "AI & Automation Engineer",
+  profileTitle: "Software & AI Engineer",
   highlightSkills: ["ai", "automation", "backend", "cloud"],
   highlightProjects: [
     "ai-chatbot",

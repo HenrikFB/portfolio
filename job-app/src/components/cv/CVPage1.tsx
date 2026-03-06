@@ -10,8 +10,9 @@ export function CVPage1({ template }: { template: TemplateProfile }) {
         style={{ background: "var(--accent)" }}
       >
         {/* Photo */}
-        <div className="mx-auto mb-5 h-28 w-28 rounded-full border-[3px] border-white/25 bg-white/10 flex items-center justify-center">
-          <span className="text-3xl font-bold text-white/40">HF</span>
+        <div className="mx-auto mb-5 h-28 w-28 rounded-full border-[3px] border-white/25 overflow-hidden flex-shrink-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/profile-photo.jpeg" alt="" className="w-full h-full object-cover" />
         </div>
 
         {/* Name + Links */}

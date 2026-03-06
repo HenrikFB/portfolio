@@ -19,7 +19,7 @@ export const config: CompanyConfig = {
       "OpenAI API",
       "API-integrationer",
       "skalerbar systemarkitektur",
-      "sammenlængende systemer",
+      "sammenhængende systemer",
       "workflow-automatiseringer",
       "e-mails og kundedialog",
     ],
