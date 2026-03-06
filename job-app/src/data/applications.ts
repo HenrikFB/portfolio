@@ -2,10 +2,6 @@ import { CompanyConfig } from "./types";
 
 const configs: Record<string, () => Promise<{ config: CompanyConfig }>> = {
   "auxo-ai-automation": () => import("../../applications/auxo-ai-automation/config"),
-  "digi-tal-outbound-automation": () =>
-    import("../../applications/digi-tal-outbound-automation/config"),
-  "fake-contoso-dotnet": () =>
-    import("../../applications/fake-contoso-dotnet/config"),
 };
 
 export function getApplicationSlugs(): string[] {
